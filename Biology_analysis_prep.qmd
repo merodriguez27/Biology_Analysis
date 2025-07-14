@@ -1,0 +1,14 @@
+---
+title: "Biology Analysis Prep"
+format: html
+editor: visual
+---
+
+```{r}
+#Packages Necessary
+install.packages("readxl")
+install.packages("dplyr")
+library(readxl)
+library(dplyr)
+```
+
