@@ -15,7 +15,19 @@ library(irr)
 ```
 
 ```{r}
+# Analysis 1 of Criteria 5: Higher-Order Thinking
+
+maylynn <- read_excel("Biology Question Evaluation (Maylynn).xlsx")
+jarrett <- read_excel("Biology Question Evaluation (Jarrett).xlsx")
+
+ratings_5 <- data.frame(
+  Maylynn = maylynn[["5 - Higher-Order Thinking"]],
+  Jarrett = jarrett[["5 - Higher-Order Thinking"]]
+)
+
+cat("Criterion 5 - Higher-Order Thinking:\n")
+print(kappa2(ratings_5, weight = "equal"))
+
 
   
 ```
-
